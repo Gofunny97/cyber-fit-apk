@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d22"/>
+      <stop offset="55%" stop-color="#05060f"/>
+      <stop offset="100%" stop-color="#0d0a1f"/>
+    </linearGradient>
+    <!-- 霓虹主渐变 -->
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ff2d95"/>
+    </linearGradient>
+    <linearGradient id="neon2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="60%" stop-color="#ff2d95"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#ff2d95" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 扫描网格 -->
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#00f0ff" stroke-opacity="0.13" stroke-width="1"/>
+    </pattern>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- 圆角底板 -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- 内部辉光 -->
+  <circle cx="256" cy="256" r="210" fill="url(#glow)"/>
+  <!-- 网格 -->
+  <rect width="512" height="512" rx="112" fill="url(#grid)"/>
+
+  <!-- 外框霓虹 -->
+  <rect x="10" y="10" width="492" height="492" rx="104" fill="none"
+        stroke="url(#neon)" stroke-width="4" stroke-opacity="0.9"/>
+  <rect x="10" y="10" width="492" height="492" rx="104" fill="none"
+        stroke="url(#neon)" stroke-width="12" stroke-opacity="0.28" filter="url(#blur)"/>
+
+  <!-- 闪电外辉光 -->
+  <path d="M292 96 L150 280 h84 l-30 136 144-192 h-86 z"
+        fill="url(#neon2)" opacity="0.75" filter="url(#blur)"/>
+
+  <!-- 主闪电 -->
+  <path d="M292 96 L150 280 h84 l-30 136 144-192 h-86 z"
+        fill="url(#neon)"/>
+
+  <!-- 闪电高光描边 -->
+  <path d="M292 96 L150 280 h84 l-30 136 144-192 h-86 z"
+        fill="none" stroke="#eafcff" stroke-width="2.5" stroke-opacity="0.85"
+        stroke-linejoin="round"/>
+
+  <!-- 底部心跳线 -->
+  <g opacity="0.9">
+    <path d="M96 424 h68 l16-26 22 42 24-58 20 42 h170"
+          fill="none" stroke="url(#neon2)" stroke-width="9"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M96 424 h68 l16-26 22 42 24-58 20 42 h170"
+          fill="none" stroke="url(#neon2)" stroke-width="18"
+          stroke-linecap="round" stroke-linejoin="round" filter="url(#soft)" opacity="0.5"/>
+  </g>
+
+  <!-- 角标装饰 -->
+  <g stroke="#00f0ff" stroke-width="5" stroke-linecap="round" opacity="0.85">
+    <path d="M44 84 V44 h40"/>
+    <path d="M468 84 V44 h-40"/>
+    <path d="M44 428 v40 h40"/>
+    <path d="M468 428 v40 h-40"/>
+  </g>
+</svg>
