@@ -1,7 +1,7 @@
 {
-  "name": "NEON//FIT 赛博运动终端",
-  "short_name": "NEON//FIT",
-  "description": "赛博朋克风格运动打卡终端 — 训练记录、饮食拍照、热量分析与体重趋势。完全离线可用。",
+  "name": "Fangyi-Fit 璧涘崥杩愬姩缁堢",
+  "short_name": "Fangyi-Fit",
+  "description": "璧涘崥鏈嬪厠椋庢牸杩愬姩鎵撳崱缁堢 鈥?璁粌璁板綍銆侀ギ椋熸媿鐓с€佺儹閲忓垎鏋愪笌浣撻噸瓒嬪娍銆傚畬鍏ㄧ绾垮彲鐢ㄣ€?,
   "lang": "zh-CN",
   "dir": "ltr",
   "start_url": "./index.html",
@@ -10,8 +10,8 @@
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui", "browser"],
   "orientation": "portrait",
-  "background_color": "#03040a",
-  "theme_color": "#03040a",
+  "background_color": "#0a0e1f",
+  "theme_color": "#0a0e1f",
   "categories": ["health", "fitness", "lifestyle", "sports"],
   "icons": [
     {
@@ -41,23 +41,23 @@
   ],
   "shortcuts": [
     {
-      "name": "运动打卡",
-      "short_name": "打卡",
-      "description": "记录今天的训练",
+      "name": "杩愬姩鎵撳崱",
+      "short_name": "鎵撳崱",
+      "description": "璁板綍浠婂ぉ鐨勮缁?,
       "url": "./index.html#checkin",
       "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
     },
     {
-      "name": "饮食打卡",
-      "short_name": "饮食",
-      "description": "拍照记录每餐",
+      "name": "楗鎵撳崱",
+      "short_name": "楗",
+      "description": "鎷嶇収璁板綍姣忛",
       "url": "./index.html#meal",
       "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
     },
     {
-      "name": "数据看板",
-      "short_name": "看板",
-      "description": "查看体重与训练分析",
+      "name": "鏁版嵁鐪嬫澘",
+      "short_name": "鐪嬫澘",
+      "description": "鏌ョ湅浣撻噸涓庤缁冨垎鏋?,
       "url": "./index.html#board",
       "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
     }
