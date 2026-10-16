@@ -1,0 +1,65 @@
+{
+  "name": "NEON//FIT 赛博运动终端",
+  "short_name": "NEON//FIT",
+  "description": "赛博朋克风格运动打卡终端 — 训练记录、饮食拍照、热量分析与体重趋势。完全离线可用。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait",
+  "background_color": "#03040a",
+  "theme_color": "#03040a",
+  "categories": ["health", "fitness", "lifestyle", "sports"],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "运动打卡",
+      "short_name": "打卡",
+      "description": "记录今天的训练",
+      "url": "./index.html#checkin",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "饮食打卡",
+      "short_name": "饮食",
+      "description": "拍照记录每餐",
+      "url": "./index.html#meal",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "数据看板",
+      "short_name": "看板",
+      "description": "查看体重与训练分析",
+      "url": "./index.html#board",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
