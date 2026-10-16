@@ -46,6 +46,12 @@ jobs:
       - name: Copy web assets
         run: npx cap copy android
 
+      - name: Fix Gradle duplicate classes
+        working-directory: android
+        run: |
+          # 在 app/build.gradle 的 android 块中添加 packagingOptions
+          sed -i '/android {/a\    packagingOptions {\n        pickFirst "**/*.so"\n    }' app/build.gradle
+
       - name: Build APK
         working-directory: android
         run: ./gradlew assembleDebug --no-daemon
