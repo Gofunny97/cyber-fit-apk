@@ -4,21 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#03040a">
-<meta name="description" content="NEON//FIT 鈥?璧涘崥鏈嬪厠椋庢牸杩愬姩鎵撳崱缁堢锛氳缁冭褰曘€侀ギ椋熸媿鐓с€佺儹閲忓垎鏋愪笌浣撻噸瓒嬪娍锛屽畬鍏ㄧ绾垮彲鐢ㄣ€?>
+<meta name="description" content="Fangi-FIT 鈥?璧涘崥鏈嬪厠椋庢牸杩愬姩鎵撳崱缁堢锛氳缁冭褰曘€侀ギ椋熸媿鐓с€佺儹閲忓垎鏋愪笌浣撻噸瓒嬪娍锛屽畬鍏ㄧ绾垮彲鐢ㄣ€?>
 <!-- PWA -->
 <link rel="manifest" href="./manifest.webmanifest">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="NEON//FIT">
+<meta name="apple-mobile-web-app-title" content="Fangyi-Fit">
 <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
 <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
 <link rel="mask-icon" href="./icons/icon.svg" color="#00f0ff">
-<title>NEON//FIT 鈥?璧涘崥杩愬姩缁堢</title>
+<title>Fangyi-Fit 鈥?璧涘崥杩愬姩缁堢</title>
 <style>
 /* ============================================================
-   NEON//FIT 鈥?CYBERPUNK SPORTS TERMINAL
+   Fangyi-Fit 鈥?CYBERPUNK SPORTS TERMINAL
    Design tokens
    ============================================================ */
 :root{
@@ -885,7 +885,7 @@ tbody tr:last-child td{border-bottom:none}
 
 <!-- BOOT -->
 <div id="boot">
-  <div class="boot-logo">NEON//FIT</div>
+  <div class="boot-logo">Fangyi-Fit</div>
   <div class="boot-sub">cyber sports terminal v2.4</div>
   <div class="boot-bar"><i></i></div>
   <div class="boot-log" id="bootLog">鍒濆鍖栫缁忔帴鍙?..</div>
@@ -896,7 +896,7 @@ tbody tr:last-child td{border-bottom:none}
   <aside class="sidebar">
     <div class="brand">
       <div class="sweep"></div>
-      <h1 data-text="NEON//FIT">NEON//FIT</h1>
+      <h1 data-text="Fangyi-Fit">Fangyi-Fit</h1>
       <p>Sports Terminal</p>
     </div>
     <nav class="nav" id="navDesktop">
@@ -1367,7 +1367,7 @@ tbody tr:last-child td{border-bottom:none}
 
 <script>
 /* ================================================================
-   NEON//FIT 鈥?绾潤鎬佸崟鏂囦欢搴旂敤
+   Fangyi-Fit 鈥?绾潤鎬佸崟鏂囦欢搴旂敤
    妯″潡锛歎tils / Store / ChartEngine / Particles / Views / App
    ================================================================ */
 (function(){
@@ -3182,7 +3182,7 @@ const PWA = {
     });
     window.addEventListener("appinstalled", ()=>{
       this.installed = true; this.deferred = null;
-      Toast.ok("NEON//FIT 宸插畨瑁呭埌妗岄潰");
+      Toast.ok("Fangyi-Fit 宸插畨瑁呭埌妗岄潰");
       this.setDismissed();
       this.render();
     });
@@ -3291,7 +3291,7 @@ function boot(){
   // 璺ㄦ爣绛鹃〉鍚屾
   window.addEventListener("storage", e=>{ if(e.key===KEY){ Store.load(); render(); } });
 
-  console.log("%cNEON//FIT","color:#00f0ff;font:700 22px monospace","路 鍗曟枃浠剁绾跨増 路 娓叉煋寮曟搸:", Chart.useLib()?"Chart.js":"鍐呯疆寮曟搸");
+  console.log("%cFangyi-Fit","color:#00f0ff;font:700 22px monospace","路 鍗曟枃浠剁绾跨増 路 娓叉煋寮曟搸:", Chart.useLib()?"Chart.js":"鍐呯疆寮曟搸");
 }
 document.readyState==="loading" ? document.addEventListener("DOMContentLoaded",boot) : boot();
 })();
