@@ -46,11 +46,16 @@ jobs:
       - name: Copy web assets
         run: npx cap copy android
 
-      - name: Fix Gradle duplicate classes
+      - name: Fix Gradle Kotlin conflict
         working-directory: android
         run: |
-          # 在 app/build.gradle 的 android 块中添加 packagingOptions
-          sed -i '/android {/a\    packagingOptions {\n        pickFirst "**/*.so"\n    }' app/build.gradle
+          cat >> app/build.gradle << 'EOF'
+
+configurations.all {
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
+}
+EOF
 
       - name: Build APK
         working-directory: android
