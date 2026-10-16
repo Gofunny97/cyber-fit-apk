@@ -25,11 +25,20 @@ jobs:
         with:
           packages: 'platform-tools platforms;android-34 build-tools;34.0.0'
 
+      - name: Prepare www directory
+        run: |
+          mkdir -p www
+          cp index.html www/
+          cp 404.html www/
+          cp manifest.webmanifest www/
+          cp sw.js www/
+          cp -r icons www/
+
       - name: Install Capacitor
         run: npm install @capacitor/core @capacitor/cli @capacitor/android
 
       - name: Init Capacitor
-        run: npx cap init "NEON FIT" "com.neonfit.app" --web-dir=.
+        run: npx cap init "NEON FIT" "com.neonfit.app" --web-dir=www
 
       - name: Add Android platform
         run: npx cap add android
